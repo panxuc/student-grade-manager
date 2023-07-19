@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{tikz}
+\usetikzlibrary{arrows, calc, positioning}
+\geometry{a4paper, landscape, scale = 0.9}
+\pagestyle{empty}
+
+\title{detail1}
+\author{Xuc Pan}
+\date{July 2023}
+
+\tikzstyle{intt}=[draw,text centered,minimum size=6em,text width=5.25cm,text height=0.34cm]
+\tikzstyle{intl}=[draw,text centered,minimum size=2em,text width=2.75cm,text height=0.34cm]
+\tikzstyle{int}=[draw,minimum size=2.5em,text centered,text width=3.5cm]
+\tikzstyle{intg}=[draw,minimum size=3em,text centered,text width=6.cm]
+\tikzstyle{sum}=[draw,shape=circle,inner sep=2pt,text centered,node distance=3.5cm]
+\tikzstyle{summ}=[drawshape=circle,inner sep=4pt,text centered,node distance=3.cm]
+
+\begin{document}
+ \begin{figure}[!htb]
+  \centering
+  \begin{tikzpicture}[>=latex', auto]
+   \node [intl] (inf) {Info};
+   \node [intl] (acc) [node distance = 2cm, below of = inf] {Account};
+   \node [intl] (usr) [node distance = 2.82cm, below left of = acc] {User};
+   \node [intl] (adm) [node distance = 2.82cm, below right of = acc] {Admin};
+   \node [intl] (stu) [node distance = 5cm, left of = acc] {Student};
+   \node [intl] (lec) [node distance = 10cm, right of = acc] {Lecture};
+   \node [intl] (lel) [node distance = 2cm, below of = lec] {LectureLimited};
+   \node [intl] (ler) [node distance = 3.5cm, left of = lel] {LectureRequired};
+   \node [intl] (leo) [node distance = 3.5cm, right of = lel] {LectureOptional};
+   \node [intl] (lnl) [node distance = 10cm, left of = inf] {LinkedList};
+   \node [intl] (fex) [node distance = 1.25cm, below of = lnl] {FileException};
+   \node [intl] (uif) [node distance = 1.25cm, below of = fex] {UserInterface};
+   \node [intl] (dbs) [node distance = 1.25cm, below of = uif] {Database};
+
+   \draw[->] (inf) -| (stu);
+   \draw[->] (inf) -- (acc);
+   \draw[->] (inf) -| (lec);
+   \draw[->] (acc) -| (usr);
+   \draw[->] (acc) -| (adm);
+   \draw[->] (usr) -| (stu);
+   \draw[->] (lec) -| (ler);
+   \draw[->] (lec) -- (lel);
+   \draw[->] (lec) -| (leo);
+  \end{tikzpicture}
+ \end{figure}
+\end{document}

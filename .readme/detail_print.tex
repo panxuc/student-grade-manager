@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{ctex}
+\usepackage{tikz}
+\usetikzlibrary{arrows, calc, positioning}
+\geometry{a4paper, landscape, scale = 0.9}
+\pagestyle{empty}
+
+\title{detailPrint}
+\author{Xuc Pan}
+\date{July 2023}
+
+\tikzstyle{intt}=[draw,text centered,minimum size=6em,text width=5.25cm,text height=0.34cm]
+\tikzstyle{intl}=[draw,text centered,minimum size=2em,text width=2.75cm,text height=0.34cm]
+\tikzstyle{int}=[draw,minimum size=2.5em,text centered,text width=3.5cm]
+\tikzstyle{intg}=[draw,minimum size=3em,text centered,text width=6.cm]
+\tikzstyle{sum}=[draw,shape=circle,inner sep=2pt,text centered,node distance=3.5cm]
+\tikzstyle{summ}=[drawshape=circle,inner sep=4pt,text centered,node distance=3.cm]
+
+\begin{document}
+ \begin{figure}[!htb]
+  \centering
+  \begin{tikzpicture}[>=latex', auto]
+   \node [intl] (kp) {打印学生成绩信息};
+   \node [intl] (ki1) [node distance = 3cm, above right of = kp] {选择排序学生信息};
+   \node [intl] (ki2) [node distance = 3cm, below right of = kp] {选择排序课程信息};
+   \node [intl] (ki3) [node distance = 4cm, right of = ki1] {选择学生};
+   \node [intl] (ki4) [node distance = 4cm, right of = ki2] {选择课程};
+   \node [intl] (ki5) [node distance = 8cm, right of = kp] {输出到文件};
+
+   \draw[->] (kp) -- (ki1);
+   \draw[->] (kp) -- (ki2);
+   \draw[->] (ki1) -- (ki3);
+   \draw[->] (ki2) -- (ki4);
+   \draw[->] (ki3) -- (ki5);
+   \draw[->] (ki4) -- (ki5);
+  \end{tikzpicture}
+ \end{figure}
+\end{document}

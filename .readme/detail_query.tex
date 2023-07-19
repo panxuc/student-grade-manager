@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{ctex}
+\usepackage{tikz}
+\usetikzlibrary{arrows, calc, positioning}
+\geometry{a4paper, landscape, scale = 0.9}
+\pagestyle{empty}
+
+\title{detailQuery}
+\author{Xuc Pan}
+\date{July 2023}
+
+\tikzstyle{intt}=[draw,text centered,minimum size=6em,text width=5.25cm,text height=0.34cm]
+\tikzstyle{intl}=[draw,text centered,minimum size=2em,text width=2.75cm,text height=0.34cm]
+\tikzstyle{int}=[draw,minimum size=2.5em,text centered,text width=3.5cm]
+\tikzstyle{intg}=[draw,minimum size=3em,text centered,text width=6.cm]
+\tikzstyle{sum}=[draw,shape=circle,inner sep=2pt,text centered,node distance=3.5cm]
+\tikzstyle{summ}=[drawshape=circle,inner sep=4pt,text centered,node distance=3.cm]
+
+\begin{document}
+ \begin{figure}[!htb]
+  \centering
+  \begin{tikzpicture}[>=latex', auto]
+   \node [intl] (kp) {查询学生成绩信息};
+   \node [intl] (ki1) [node distance = 6cm, above right of = kp] {选择查询学生信息};
+   \node [intl] (ki2) [node distance = 6cm, below right of = kp] {选择查询课程信息};
+   \node [intl] (ki4) [node distance = 4cm, right of = ki1] {检查该学生是否存在于数据库中};
+   \node [intl] (ki3) [node distance = 2cm, above of = ki4] {输入学生姓名或学号};
+   \node [intl] (ki5) [node distance = 2cm, below of = ki4] {显示学生信息};
+   \node [intl] (ki7) [node distance = 4cm, right of = ki2] {检查该课程是否存在于数据库中};
+   \node [intl] (ki6) [node distance = 2cm, above of = ki7] {输入课程名称};
+   \node [intl] (ki8) [node distance = 2cm, below of = ki7] {显示课程信息};
+
+   \draw[->] (kp) |- (ki1);
+   \draw[->] (kp) |- (ki2);
+   \draw[->] (ki1) |- (ki3);
+   \draw[->] (ki3) -- (ki4);
+   \draw[->] (ki4) -- (ki5);
+   \draw[->] (ki2) |- (ki6);
+   \draw[->] (ki6) -- (ki7);
+   \draw[->] (ki7) -- (ki8);
+  \end{tikzpicture}
+ \end{figure}
+\end{document}

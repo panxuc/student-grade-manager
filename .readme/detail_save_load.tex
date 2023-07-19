@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{ctex}
+\usepackage{tikz}
+\usetikzlibrary{arrows, calc, positioning}
+\geometry{a4paper, landscape, scale = 0.9}
+\pagestyle{empty}
+
+\title{detailSaveLoad}
+\author{Xuc Pan}
+\date{July 2023}
+
+\tikzstyle{intt}=[draw,text centered,minimum size=6em,text width=5.25cm,text height=0.34cm]
+\tikzstyle{intl}=[draw,text centered,minimum size=2em,text width=2.75cm,text height=0.34cm]
+\tikzstyle{int}=[draw,minimum size=2.5em,text centered,text width=3.5cm]
+\tikzstyle{intg}=[draw,minimum size=3em,text centered,text width=6.cm]
+\tikzstyle{sum}=[draw,shape=circle,inner sep=2pt,text centered,node distance=3.5cm]
+\tikzstyle{summ}=[drawshape=circle,inner sep=4pt,text centered,node distance=3.cm]
+
+\begin{document}
+ \begin{figure}[!htb]
+  \centering
+  \begin{tikzpicture}[>=latex', auto]
+   \node [intl] (ki1) {解密};
+   \node [intl] (kp1) [node distance = 3cm, above left of = ki1]{保存学生成绩信息};
+   \node [intl] (kp2) [node distance = 3cm, below left of = ki1]{读取学生成绩信息};
+   \node [intl] (ki2) [node distance = 3cm, above right of = ki1] {写入信息};
+   \node [intl] (ki3) [node distance = 3cm, below right of = ki1] {读取信息};
+   \node [intl] (ki4) [node distance = 3cm, below right of = ki2] {加密};
+
+   \draw[->] (kp1) -- (ki1);
+   \draw[->] (kp2) -- (ki1);
+   \draw[->] (ki1) -- (ki2);
+   \draw[->] (ki1) -- (ki3);
+   \draw[->] (ki2) -- (ki4);
+   \draw[->] (ki3) -- (ki4);
+  \end{tikzpicture}
+ \end{figure}
+\end{document}
