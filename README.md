@@ -104,7 +104,7 @@
 
 #### 3. 类的UML图
 
-若不清晰可参见[PDF(纵向)](uml_portrait.pdf)或[PDF(横向)](src/uml_landscape.pdf)。
+若不清晰可参见[PDF(纵向)](.readme/uml_portrait.pdf)或[PDF(横向)](.readme/uml_landscape.pdf)。
 
 ![uml_portrait](.readme/uml_portrait.png)
 
