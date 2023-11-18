@@ -1,4 +1,4 @@
-![封面页](.readme/cover.png)
+# 学生成绩管理系统 设计报告
 
 <div STYLE="page-break-after: always;"></div>
 
