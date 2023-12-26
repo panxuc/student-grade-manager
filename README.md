@@ -72,7 +72,7 @@
 - 在打印学生成绩信息时，用户首先输入要打印的学生姓名或学号，系统会进行检索。如果系统中有该学生的相关信息，则系统则会以输出到`output_student_学号_姓名.md`的方式打印学生成绩单。用户也可以选择打印全部学生信息（输出到`output_student_all.md`）、打印课程信息（输出到`output_lecture_课程名称.md`）、打印全部课程信息（输出到`output_lecture_all.md`）。
 
 学生考勤管理系统中功能模块图：
-![功能模块图](.readme/module.png)
+![功能模块图](assets/module.png)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -80,33 +80,33 @@
 
 #### 1. 学生成绩管理系统中类的类层次图
 
-![类的层次图](.readme/detail_1.png)
+![类的层次图](assets/detail_1.png)
 
 #### 2. 学生成绩管理系统中各功能模块的实现
 
-![各功能模块](.readme/detail_2.png)
+![各功能模块](assets/detail_2.png)
 
-![添加学生成绩信息](.readme/detail_add.png)
+![添加学生成绩信息](assets/detail_add.png)
 
-![修改学生成绩信息](.readme/detail_modify.png)
+![修改学生成绩信息](assets/detail_modify.png)
 
-![删除学生成绩信息](.readme/detail_delete.png)
+![删除学生成绩信息](assets/detail_delete.png)
 
-![查询学生成绩信息](.readme/detail_query.png)
+![查询学生成绩信息](assets/detail_query.png)
 
-![排序学生成绩信息](.readme/detail_sort.png)
+![排序学生成绩信息](assets/detail_sort.png)
 
-![打印学生成绩信息](.readme/detail_print.png)
+![打印学生成绩信息](assets/detail_print.png)
 
-![保存与载入学生信息](.readme/detail_save_load.png)
+![保存与载入学生信息](assets/detail_save_load.png)
 
 <div STYLE="page-break-after: always;"></div>
 
 #### 3. 类的UML图
 
-若不清晰可参见[PDF(纵向)](.readme/uml_portrait.pdf)或[PDF(横向)](.readme/uml_landscape.pdf)。
+若不清晰可参见[PDF(纵向)](assets/uml_portrait.pdf)或[PDF(横向)](assets/uml_landscape.pdf)。
 
-![uml_portrait](.readme/uml_portrait.png)
+![uml_portrait](assets/uml_portrait.png)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -130,59 +130,59 @@
 
 首先注册教师账户。
 
-![](.readme/screenshot_login.png)
+![](assets/screenshot_login.png)
 
 添加一名学生。
 
-![](.readme/screenshot_add_0.png)
+![](assets/screenshot_add_0.png)
 
-![](.readme/screenshot_add_1.png)
+![](assets/screenshot_add_1.png)
 
-![](.readme/screenshot_add_2.png)
+![](assets/screenshot_add_2.png)
 
 添加完成后查询到该学生，说明添加成功。
 
-![](.readme/screenshot_add_3.png)
+![](assets/screenshot_add_3.png)
 
 继续添加一些学生。
 
-![](.readme/screenshot_add_4.png)
+![](assets/screenshot_add_4.png)
 
-![](.readme/screenshot_add_5.png)
+![](assets/screenshot_add_5.png)
 
-![](.readme/screenshot_add_6.png)
+![](assets/screenshot_add_6.png)
 
 将学生成绩按平均绩点升序排序。
 
-![](.readme/screenshot_sort.png)
+![](assets/screenshot_sort.png)
 
 打印学生成绩。
 
-![](.readme/screenshot_print_0.png)
+![](assets/screenshot_print_0.png)
 
-![](.readme/screenshot_print_1.png)
+![](assets/screenshot_print_1.png)
 
 保存学生成绩，得到加密文件。
 
-![](.readme/screenshot_save_0.png)
+![](assets/screenshot_save_0.png)
 
-![](.readme/screenshot_save_1.png)
+![](assets/screenshot_save_1.png)
 
 登录学生账户。
 
-![](.readme/screenshot_student_main.png)
+![](assets/screenshot_student_main.png)
 
 学生只可对自己的信息进行查看。
 
-![](.readme/screenshot_query.png)
+![](assets/screenshot_query.png)
 
 返回教师账号，修改学生信息。
 
-![](.readme/screenshot_modify_0.png)
+![](assets/screenshot_modify_0.png)
 
 成功修改。
 
-![](.readme/screenshot_modify_1.png)
+![](assets/screenshot_modify_1.png)
 
 <div STYLE="page-break-after: always;"></div>
 
